@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('items/', views.ItemList.as_view()),
     path('items/<int:pk>/', views.ItemDetail.as_view()),
-#   re_path('.*', TemplateView.as_view(template_name='index.html')),
+    path('inv/',  TemplateView.as_view(template_name='index.html')),
+    #re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
