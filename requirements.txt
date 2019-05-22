@@ -2,4 +2,4 @@ django>=2.0.8
 gunicorn==19.7.1
 whitenoise==3.3.1
 django-cors-headers==3.0.1
-djangorestframework=3.9.4
+djangorestframework==3.9.4
