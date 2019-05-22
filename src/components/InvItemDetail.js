@@ -30,7 +30,7 @@ export default class InvItemDetail extends Component {
         }
 
         if (itemNum) {
-            axios.get('http://localhost:8000/items/' + itemNum)
+            axios.get('http://127.0.0.1:8000/items/' + itemNum)
                 .then(response => {
                     this.setState({
                         name: response.data.name,

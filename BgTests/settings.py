@@ -16,6 +16,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -25,7 +29,7 @@ SECRET_KEY = 'b)x_wf=ejuv5nv5q7l@$j$xyq9kv(ywbi_6)rwy$%&=^rd7!r#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['webwarehouseinventory.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000']
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = (

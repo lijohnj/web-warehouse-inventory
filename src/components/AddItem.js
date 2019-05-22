@@ -48,7 +48,7 @@ export default class AddItem extends Component {
             quantity: this.state.quantity
         };
 
-        axios.post(`http://localhost:8000/items/`, obj)
+        axios.post(`http://127.0.0.1:8000/items/`, obj)
             .then(res => {
                 console.log(res.data);
                 this.props.history.push('/invItemList');
