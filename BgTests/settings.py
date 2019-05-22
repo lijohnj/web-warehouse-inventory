@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['webwarehouseinventory.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000']
 
 CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',
