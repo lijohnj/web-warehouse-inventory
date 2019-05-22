@@ -161,7 +161,7 @@ class InvItemList extends React.Component {
       page: pageNum,
     });
 
-    axios.get('http://127.0.0.1:8000/items')
+    axios.get('http://localhost:8000/items')
       .then(response => {
         this.setState({ rows: response.data, page: parseInt(pageNum) });
       })
