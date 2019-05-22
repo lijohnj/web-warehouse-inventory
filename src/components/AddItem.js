@@ -48,7 +48,7 @@ export default class AddItem extends Component {
             quantity: this.state.quantity
         };
 
-        axios.post(`https://webwarehouseinventory.herokuapp.com/items/`, obj)
+        axios.post(`/items/`, obj)
             .then(res => {
                 console.log(res.data);
                 this.props.history.push('/invItemList');

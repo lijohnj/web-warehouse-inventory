@@ -161,7 +161,7 @@ class InvItemList extends React.Component {
       page: pageNum,
     });
 
-    axios.get('https://webwarehouseinventory.herokuapp.com/items')
+    axios.get('/items')
       .then(response => {
         this.setState({ rows: response.data, page: parseInt(pageNum) });
       })

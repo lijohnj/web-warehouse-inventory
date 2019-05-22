@@ -30,7 +30,7 @@ export default class InvItemDetail extends Component {
         }
 
         if (itemNum) {
-            axios.get('https://webwarehouseinventory.herokuapp.com/items/' + itemNum)
+            axios.get('/items/' + itemNum)
                 .then(response => {
                     this.setState({
                         name: response.data.name,
@@ -70,7 +70,7 @@ export default class InvItemDetail extends Component {
             image: this.state.image,
             quantity: this.state.quantity
         };
-        axios.put(`https://webwarehouseinventory.herokuapp.com/items/${this.state.itemId}/`, obj)
+        axios.put(`/items/${this.state.itemId}/`, obj)
             .then(res => {
                 this.navigateToItemList();
             }).catch(err => {
